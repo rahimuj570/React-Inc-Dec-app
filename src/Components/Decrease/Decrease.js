@@ -6,12 +6,17 @@ const Decrease = (props) => {
     if (value > 0) {
       setValue(value - 1);
     } else {
-      alert(`Can't Decrease Negative`);
+      alert(`Can't Decrease Zero`);
     }
   };
   return (
     <div>
-      <button onClick={decBtn}>Decrease</button>
+      <button
+        className="bg-danger text-white py-2 px-3 rounded-3 fw-bold"
+        onClick={decBtn}
+      >
+        Decrease
+      </button>
     </div>
   );
 };

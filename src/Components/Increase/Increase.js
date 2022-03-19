@@ -7,7 +7,12 @@ const Increase = (props) => {
   };
   return (
     <div>
-      <button onClick={incBtn}>Increase</button>
+      <button
+        className="bg-success text-white py-2 px-3 rounded-3 fw-bold"
+        onClick={incBtn}
+      >
+        Increase
+      </button>
     </div>
   );
 };
