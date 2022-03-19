@@ -1,9 +1,13 @@
 import React from "react";
 
-const Increase = () => {
+const Increase = (props) => {
+  const [value, setValue] = props.propValue;
+  const incBtn = () => {
+    setValue(value + 1);
+  };
   return (
     <div>
-      <h1>hello</h1>
+      <button onClick={incBtn}>Increase</button>
     </div>
   );
 };
